@@ -1,36 +1,36 @@
 <manifest>
-    <remote name="gitlab.devtools.intel.com" fetch="ssh://git@gitlab.devtools.intel.com:29418/sst/isecl/" />
-    <default revision="v3.1/develop"/>
+    <remote name="github.com" fetch="https://github.com/intel-secl/" />
+    <default revision="refs/tags/v3.1.0"/>
 
-    <project name="certificate-management-service" remote="gitlab.devtools.intel.com" path="certificate-management-service" />
+    <project name="certificate-management-service" remote="github.com" path="certificate-management-service" />
 
-    <project name="authservice" remote="gitlab.devtools.intel.com" path="authservice" />
+    <project name="authservice" remote="github.com" path="authservice" />
     
-    <project name="intel-secl" remote="gitlab.devtools.intel.com" path="intel-secl" />
+    <project name="intel-secl" remote="github.com" path="intel-secl" />
     
-    <project name="workload-service" remote="gitlab.devtools.intel.com" path="workload-service" />
+    <project name="workload-service" remote="github.com" path="workload-service" />
 
-    <project name="go-workload-policy-manager" remote="gitlab.devtools.intel.com" path="workload-policy-manager" />
+    <project name="workload-policy-manager" remote="github.com" path="workload-policy-manager" />
 
-    <project name="external-artifacts" remote="gitlab.devtools.intel.com" path="external-artifacts" />
+    <project name="external-artifacts" remote="github.com" path="external-artifacts" />
 
-    <project name="contrib" remote="gitlab.devtools.intel.com" path="contrib" />
+    <project name="contrib" remote="github.com" path="contrib" />
 
-    <project name="common-java" remote="gitlab.devtools.intel.com" path="common-java" />
+    <project name="common-java" remote="github.com" path="common-java" />
 
-    <project name="lib-java/lib-common" remote="gitlab.devtools.intel.com" path="lib-common" />
+    <project name="lib-common" remote="github.com" path="lib-common" />
 
-    <project name="lib-java/lib-saml" remote="gitlab.devtools.intel.com" path="lib-saml" />
+    <project name="lib-saml" remote="github.com" path="lib-saml" />
 
-    <project name="key-broker-service" remote="gitlab.devtools.intel.com" path="key-broker-service" />
+    <project name="key-broker-service" remote="github.com" path="key-broker-service" />
 
-    <project name="go-trust-agent" remote="gitlab.devtools.intel.com" path="trust-agent" />
+    <project name="go-trustagent" remote="github.com" path="trust-agent" />
 
-    <project name="workload-agent" remote="gitlab.devtools.intel.com" path="workload-agent" />
+    <project name="workload-agent" remote="github.com" path="workload-agent" />
 
-    <project name="utils" path="utils" remote="gitlab.devtools.intel.com" />
+    <project name="utils" path="utils" remote="github.com" revision="v3.1/develop"/>
 
-    <project name="build-manifest" remote="gitlab.devtools.intel.com" path="build-manifest">
+    <project name="build-manifest" remote="github.com" path="build-manifest">
         <copyfile src="scripts/vmc" dest="Makefile" />
     </project>
 </manifest>

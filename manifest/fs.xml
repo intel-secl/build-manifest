@@ -1,18 +1,18 @@
 <manifest>
-    <remote name="gitlab.devtools.intel.com" fetch="ssh://git@gitlab.devtools.intel.com:29418/sst/isecl/" />
-    <default revision="v3.1/develop" />
+    <remote name="github.com" fetch="https://github.com/intel-secl/" />
+    <default revision="refs/tags/v3.1.0" />
 
-    <project name="certificate-management-service" path="certificate-management-service" remote="gitlab.devtools.intel.com" />
+    <project name="certificate-management-service" path="certificate-management-service" remote="github.com" />
 
-    <project name="authservice" path="authservice" remote="gitlab.devtools.intel.com" />
+    <project name="authservice" path="authservice" remote="github.com" />
     
-    <project name="intel-secl" path="intel-secl" remote="gitlab.devtools.intel.com" />
+    <project name="intel-secl" path="intel-secl" remote="github.com" />
 
-    <project name="go-trust-agent" path="trust-agent" remote="gitlab.devtools.intel.com" />
+    <project name="go-trustagent" path="trust-agent" remote="github.com" />
 
-    <project name="utils" path="utils" remote="gitlab.devtools.intel.com" />
+    <project name="utils" path="utils" remote="github.com" revision="v3.1/develop"/>
 
-    <project name="build-manifest" remote="gitlab.devtools.intel.com" path="build-manifest">
+    <project name="build-manifest" remote="github.com" path="build-manifest">
         <copyfile src="scripts/fs" dest="Makefile" />
     </project>
 

@@ -291,7 +291,7 @@ Secure Key Caching: https://github.com/intel-secl/docs/quick-start-guides/Quick%
 
 ```
 mkdir -p /root/workspace && cd /root/workspace
-repo init -u https://github.com/intel-secl/build-manifest.git -b v3.1/develop -m manifest/skc.xml
+repo init -u https://github.com/intel-secl/build-manifest.git -b refs/tags/v3.1.0 -m manifest/skc.xml
 repo sync
 ```
 

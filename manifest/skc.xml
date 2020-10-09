@@ -1,35 +1,36 @@
 <manifest>
-    <remote name="gitlab.devtools.intel.com" fetch="ssh://git@gitlab.devtools.intel.com:29418/" />
-    <default revision="v3.1/develop"/>
+    <remote name="github.com" fetch="https://github.com/intel-secl/" />
+    <default revision="refs/tags/v3.1.0"/>
 
-    <project name="sst/isecl/certificate-management-service" path="certificate-management-service" remote="gitlab.devtools.intel.com" />
+    <project name="certificate-management-service" path="certificate-management-service" remote="github.com" />
 
-    <project name="sst/isecl/authservice" path="authservice" remote="gitlab.devtools.intel.com" />
+    <project name="authservice" path="authservice" remote="github.com" />
     
-    <project name="sst/isecl/sgx-caching-service" path="sgx-caching-service" remote="gitlab.devtools.intel.com" />
+    <project name="sgx-caching-service" path="sgx-caching-service" remote="github.com" />
     
-    <project name="sst/isecl/sgx-verification-service" path="sgx-verification-service" remote="gitlab.devtools.intel.com" />
+    <project name="sgx-verification-service" path="sgx-verification-service" remote="github.com" />
     
-    <project name="sst/isecl/contrib" path="contrib" remote="gitlab.devtools.intel.com" />
+    <project name="contrib" path="contrib" remote="github.com" />
 
-    <project name="sst/isecl/external-artifacts" path="external-artifacts" remote="gitlab.devtools.intel.com" />
+    <project name="external-artifacts" path="external-artifacts" remote="github.com" />
 
-    <project name="sst/isecl/common-java" path="common-java" remote="gitlab.devtools.intel.com" revision="v3.1/develop-skc" />
+    <project name="common-java" path="common-java" remote="github.com" revision="refs/tags/v3.1.0-skc" />
 
-    <project name="sst/isecl/key-broker-service" path="key-broker-service" remote="gitlab.devtools.intel.com" revision="v3.1/develop-skc" />
+    <project name="key-broker-service" path="key-broker-service" remote="github.com" revision="refs/tags/v3.1.0-skc" />
 
-    <project name="isecl-k8s-extenstions" remote="gitlab.devtools.intel.com" path="k8s-extensions" /> revision="v3.0/merge-isecl-skc" />
-    <project name="sst/isecl/sgx-hvs" path="sgx-hvs" remote="gitlab.devtools.intel.com" />
+    <project name="k8s-extensions" path="k8s-extensions" remote="github.com" revision="refs/tags/v3.1.0-skc" />
+
+    <project name="sgx-hvs" path="sgx-hvs" remote="github.com" />
     
-    <project name="sst/isecl/intel-secl" path="intel-secl" remote="gitlab.devtools.intel.com" />
+    <project name="intel-secl" path="intel-secl" remote="github.com" />
 
-    <project name="sst/isecl/sgx_agent" path="sgx_agent" remote="gitlab.devtools.intel.com" />
+    <project name="sgx_agent" path="sgx_agent" remote="github.com" />
 
-    <project name="sst/isecl/skc_library" path="skc_library" remote="gitlab.devtools.intel.com" />
+    <project name="skc_library" path="skc_library" remote="github.com" />
     
-    <project name="sst/isecl/utils" path="utils" remote="gitlab.devtools.intel.com" />
+    <project name="utils" path="utils" remote="github.com" revision="v3.1/develop"/>
 
-    <project name="sst/isecl/build-manifest" remote="gitlab.devtools.intel.com" path="build-manifest">
+    <project name="build-manifest" remote="github.com" path="build-manifest">
         <copyfile src="scripts/skc" dest="Makefile" />
     </project>
 </manifest>
